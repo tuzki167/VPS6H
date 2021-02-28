@@ -26,8 +26,8 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/ThuongHai/windows-rdp/main/NGROK-AP.bat -OutFile NGROK-AP.bat
         Invoke-WebRequest https://raw.githubusercontent.com/ThuongHai/windows-rdp/main/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/ThuongHai/windows-rdp/main/loop.bat -OutFile loop.bat
-        Invoke-WebRequest http://rarlab.com/rar/winrar-x64-600.exe -OutFile "C:\Users\Administrator\Downloads\WinRAR.exe"
-        Invoke-WebRequest https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe -OutFile "C:\Users\Administrator\Downloads\python.exe"
+        Invoke-WebRequest http://rarlab.com/rar/winrar-x64-600.exe -OutFile C:\Users\Administrator\Downloads\WinRAR.exe
+        Invoke-WebRequest https://www.python.org/ftp/python/3.9.2/python-3.9.2-amd64.exe -OutFile C:\Users\Administrator\Downloads\python.exe
     - name: Make YML file for NGROK.
       run: start NGROK-AP.bat
     - name: Enable RDP Access.
